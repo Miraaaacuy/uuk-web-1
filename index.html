@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Alat Agus Sofater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Alat Agus Sofater</h1>
+    </header>
+
+    <section class="produk">
+        <article class="produk">
+            <img class="gambar" src="buku tulis.jpg" alt="Buku Tulis">
+            <h2>Buku Tulis</h2>
+            <p class="harga">Rp 5.000</p>
+        </article>
+
+        <article class="produk">
+            <img class="gambar" src="pensil 2b.png" alt="Pensil 2B">
+            <h2>Pensil 2B</h2>
+            <p class="harga">Rp 3.000</p>
+        </article>
+
+        <article class="produk">
+            <img class="gambar" src="tas sekolah.jpg" alt="Tas Sekolah">
+            <h2>Tas Sekolah</h2>
+            <p class="harga">Rp 150.000</p>
+        </article>
+    </section>
+
+    <form id="formPesan" action="#" method="get">
+        <h2>FORM PEMESANAN</h2>
+
+        <div class="baris">
+            <label for="nama">Nama Pemesan:</label>
+            <input type="text" id="nama" name="nama" required minlength="3" maxlength="50">
+        </div>
+
+        <div class="baris">
+            <label for="hp">Nomor HP:</label>
+            <input type="tel" id="hp" name="hp" required pattern="[0-9]{10,13}" title="Isi 10 sampai 13 angka">
+        </div>
+
+        <div class="baris">
+            <label for="produk">Produk:</label>
+            <select id="produk" name="produk" required>
+                <option value="">-- Pilih --</option>
+                <option value="Buku Tulis">Buku Tulis</option>
+                <option value="Pensil 2B">Pensil 2B</option>
+                <option value="Tas Sekolah">Tas Sekolah</option>
+            </select>
+        </div>
+
+        <div class="baris">
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required min="1" max="20">
+        </div>
+
+        <fieldset>
+            <legend>Metode Bayar:</legend>
+            <input type="radio" id="transfer" name="bayar" value="Transfer" required>
+            <label for="transfer">Transfer</label>
+            <input type="radio" id="cod" name="bayar" value="COD">
+            <label for="cod">COD</label>
+        </fieldset>
+
+        <div class="baris">
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required minlength="10" maxlength="200"></textarea>
+        </div>
+
+        <button type="submit">Pesan</button>
+    </form>
+
+    <footer>
+        <p>Kontak Toko: Jl. Pendidikan No. 10 | Telp. 0812-3456-7890 | tokoceria@email.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf8ef;
+    color: #333333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section.produk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+article.produk {
+    background-color: white;
+    border: 1px solid #d7ccc8;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gambar {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+}
+
+article.produk h2 {
+    font-size: 18px;
+    margin: 12px 0 5px;
+}
+
+.harga {
+    color: #e65100;
+    font-weight: bold;
+    margin: 0;
+}
+
+#formPesan {
+    background-color: white;
+    border: 1px solid #d7ccc8;
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#formPesan h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.baris {
+    margin-bottom: 15px;
+}
+
+.baris label, legend {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #a1887f;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 1px solid #a1887f;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0 0 15px;
+}
+
+fieldset input {
+    width: auto;
+}
+
+fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+button {
+    background-color: #ef6c00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
